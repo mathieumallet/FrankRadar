@@ -12,6 +12,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.model = [[RadarModel alloc] init];
+    
     // Override point for customization after application launch.
     return YES;
 }

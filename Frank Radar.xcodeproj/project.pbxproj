@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99180B101870CA35007F77A0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99180B0F1870CA35007F77A0 /* CoreLocation.framework */; };
+		9992452217EF8B67009C3F20 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9992452117EF8B67009C3F20 /* SettingsViewController.m */; };
+		999E47E717E650D100E23E73 /* RadarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 999E47E617E650D100E23E73 /* RadarModel.m */; };
 		99DC075617E4EC6500B8E102 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DC075517E4EC6500B8E102 /* UIKit.framework */; };
 		99DC075817E4EC6500B8E102 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DC075717E4EC6500B8E102 /* Foundation.framework */; };
 		99DC075A17E4EC6500B8E102 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DC075917E4EC6500B8E102 /* CoreGraphics.framework */; };
@@ -18,15 +21,23 @@
 		99DC076C17E4EC6500B8E102 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99DC076B17E4EC6500B8E102 /* Default-568h@2x.png */; };
 		99DC076F17E4EC6500B8E102 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99DC076D17E4EC6500B8E102 /* MainStoryboard_iPhone.storyboard */; };
 		99DC077217E4EC6500B8E102 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99DC077017E4EC6500B8E102 /* MainStoryboard_iPad.storyboard */; };
-		99DC077517E4EC6500B8E102 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DC077417E4EC6500B8E102 /* FirstViewController.m */; };
+		99DC077517E4EC6500B8E102 /* RadarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DC077417E4EC6500B8E102 /* RadarController.m */; };
 		99DC077717E4EC6500B8E102 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 99DC077617E4EC6500B8E102 /* first.png */; };
 		99DC077917E4EC6500B8E102 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99DC077817E4EC6500B8E102 /* first@2x.png */; };
 		99DC077C17E4EC6500B8E102 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DC077B17E4EC6500B8E102 /* SecondViewController.m */; };
 		99DC077E17E4EC6600B8E102 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 99DC077D17E4EC6600B8E102 /* second.png */; };
 		99DC078017E4EC6600B8E102 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99DC077F17E4EC6600B8E102 /* second@2x.png */; };
+		99DC0E3717F26A7900DEE8FB /* DataSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DC0E3617F26A7900DEE8FB /* DataSourceViewController.m */; };
+		99DC0E3A180C733F00DEE8FB /* location_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 99DC0E38180C733F00DEE8FB /* location_marker.png */; };
+		99DC0E3B180C733F00DEE8FB /* location_marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99DC0E39180C733F00DEE8FB /* location_marker@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99180B0F1870CA35007F77A0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9992452017EF8B67009C3F20 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		9992452117EF8B67009C3F20 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		999E47E517E650D100E23E73 /* RadarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadarModel.h; sourceTree = "<group>"; };
+		999E47E617E650D100E23E73 /* RadarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadarModel.m; sourceTree = "<group>"; };
 		99DC075217E4EC6500B8E102 /* Frank Radar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Frank Radar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99DC075517E4EC6500B8E102 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		99DC075717E4EC6500B8E102 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,14 +53,18 @@
 		99DC076B17E4EC6500B8E102 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		99DC076E17E4EC6500B8E102 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		99DC077117E4EC6500B8E102 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		99DC077317E4EC6500B8E102 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		99DC077417E4EC6500B8E102 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		99DC077317E4EC6500B8E102 /* RadarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadarController.h; sourceTree = "<group>"; };
+		99DC077417E4EC6500B8E102 /* RadarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadarController.m; sourceTree = "<group>"; };
 		99DC077617E4EC6500B8E102 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		99DC077817E4EC6500B8E102 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		99DC077A17E4EC6500B8E102 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		99DC077B17E4EC6500B8E102 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		99DC077D17E4EC6600B8E102 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		99DC077F17E4EC6600B8E102 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		99DC0E3517F26A7900DEE8FB /* DataSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSourceViewController.h; sourceTree = "<group>"; };
+		99DC0E3617F26A7900DEE8FB /* DataSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSourceViewController.m; sourceTree = "<group>"; };
+		99DC0E38180C733F00DEE8FB /* location_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_marker.png; sourceTree = "<group>"; };
+		99DC0E39180C733F00DEE8FB /* location_marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_marker@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99180B101870CA35007F77A0 /* CoreLocation.framework in Frameworks */,
 				99DC075617E4EC6500B8E102 /* UIKit.framework in Frameworks */,
 				99DC075817E4EC6500B8E102 /* Foundation.framework in Frameworks */,
 				99DC075A17E4EC6500B8E102 /* CoreGraphics.framework in Frameworks */,
@@ -86,6 +102,7 @@
 		99DC075417E4EC6500B8E102 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99180B0F1870CA35007F77A0 /* CoreLocation.framework */,
 				99DC075517E4EC6500B8E102 /* UIKit.framework */,
 				99DC075717E4EC6500B8E102 /* Foundation.framework */,
 				99DC075917E4EC6500B8E102 /* CoreGraphics.framework */,
@@ -99,16 +116,24 @@
 				99DC076417E4EC6500B8E102 /* AppDelegate.h */,
 				99DC076517E4EC6500B8E102 /* AppDelegate.m */,
 				99DC076D17E4EC6500B8E102 /* MainStoryboard_iPhone.storyboard */,
+				99DC0E3517F26A7900DEE8FB /* DataSourceViewController.h */,
+				99DC0E3617F26A7900DEE8FB /* DataSourceViewController.m */,
 				99DC077017E4EC6500B8E102 /* MainStoryboard_iPad.storyboard */,
-				99DC077317E4EC6500B8E102 /* FirstViewController.h */,
-				99DC077417E4EC6500B8E102 /* FirstViewController.m */,
+				99DC077317E4EC6500B8E102 /* RadarController.h */,
+				99DC077417E4EC6500B8E102 /* RadarController.m */,
 				99DC077617E4EC6500B8E102 /* first.png */,
 				99DC077817E4EC6500B8E102 /* first@2x.png */,
+				99DC0E38180C733F00DEE8FB /* location_marker.png */,
+				99DC0E39180C733F00DEE8FB /* location_marker@2x.png */,
 				99DC077A17E4EC6500B8E102 /* SecondViewController.h */,
 				99DC077B17E4EC6500B8E102 /* SecondViewController.m */,
 				99DC077D17E4EC6600B8E102 /* second.png */,
 				99DC077F17E4EC6600B8E102 /* second@2x.png */,
 				99DC075C17E4EC6500B8E102 /* Supporting Files */,
+				999E47E517E650D100E23E73 /* RadarModel.h */,
+				999E47E617E650D100E23E73 /* RadarModel.m */,
+				9992452017EF8B67009C3F20 /* SettingsViewController.h */,
+				9992452117EF8B67009C3F20 /* SettingsViewController.m */,
 			);
 			path = "Frank Radar";
 			sourceTree = "<group>";
@@ -185,9 +210,11 @@
 				99DC076F17E4EC6500B8E102 /* MainStoryboard_iPhone.storyboard in Resources */,
 				99DC077217E4EC6500B8E102 /* MainStoryboard_iPad.storyboard in Resources */,
 				99DC077717E4EC6500B8E102 /* first.png in Resources */,
+				99DC0E3B180C733F00DEE8FB /* location_marker@2x.png in Resources */,
 				99DC077917E4EC6500B8E102 /* first@2x.png in Resources */,
 				99DC077E17E4EC6600B8E102 /* second.png in Resources */,
 				99DC078017E4EC6600B8E102 /* second@2x.png in Resources */,
+				99DC0E3A180C733F00DEE8FB /* location_marker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,9 +226,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				99DC076217E4EC6500B8E102 /* main.m in Sources */,
+				99DC0E3717F26A7900DEE8FB /* DataSourceViewController.m in Sources */,
 				99DC076617E4EC6500B8E102 /* AppDelegate.m in Sources */,
-				99DC077517E4EC6500B8E102 /* FirstViewController.m in Sources */,
+				99DC077517E4EC6500B8E102 /* RadarController.m in Sources */,
+				9992452217EF8B67009C3F20 /* SettingsViewController.m in Sources */,
 				99DC077C17E4EC6500B8E102 /* SecondViewController.m in Sources */,
+				999E47E717E650D100E23E73 /* RadarModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +364,7 @@
 				99DC078517E4EC6600B8E102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
